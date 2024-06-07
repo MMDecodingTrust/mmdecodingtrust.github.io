@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>DecodingTrust Benchmark</title>
-    <meta name="description" content="DecodingTrust: Comprehensive Assessment of Trustworthiness in GPT Models">
+    <meta name="description" content="Multimodal DecodingTrust: Comprehensive Assessment of Trustworthiness in Multimodal Foundation Models">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta property="og:image" content="/logo.png">
@@ -28,16 +28,16 @@
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="/">Home</a></li>
-                    <li><a href="https://github.com/AI-secure/DecodingTrust">GitHub</a></li>
-                    <li><a href="https://arxiv.org/abs//2306.11698">Paper</a></li>
-                    <li><a href="/explore">Explore</a></li>
-                    <li><a href="/demo">Demo</a></li>
-                    <li><a href="/leaderboard">Leaderboard</a></li>
+<!--                    <li><a href="https://github.com/AI-secure/DecodingTrust">GitHub</a></li>-->
+<!--                    <li><a href="https://arxiv.org/abs//2306.11698">Paper</a></li>-->
+<!--                    <li><a href="/explore">Explore</a></li>-->
+<!--                    <li><a href="/demo">Demo</a></li>-->
+<!--                    <li><a href="/leaderboard">Leaderboard</a></li>-->
                 </ul>
             </div>
         </div>
         <div class="leftNav">
-            <div class="brandDiv"><a class="navbar-brand" href="/">DecodingTrust</a></div>
+            <div class="brandDiv"><a class="navbar-brand" href="/">MMDecodingTrust</a></div>
         </div>
     </div>
 </div>
@@ -53,136 +53,136 @@
             <!--                <img src="/logo.png" width="150" height="150"/>-->
             <!--            </div>-->
             <div class="col-md-12 text-center">
-                <h1 id="appTitle"><b>DecodingTrust</b></h1>
-                <h3 id="appSubtitle"> Comprehensive Assessment of Trustworthiness in GPT Models</h3>
+                <h1 id="appTitle"><b>MMDecodingTrust</b></h1>
+                <h3 id="appSubtitle">Comprehensive Assessment of Trustworthiness in Multimodal Foundation Models</h3>
             </div>
         </div>
     </div>
 </div>
 <div class="cover" id="contentCover">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="infoCard">
-                    <div class="infoBody">
-                        <div class="infoHeadline"><h1>What is DecodingTrust?</h1></div>
-                        <p><span>DecodingTrust</span> aims at providing a thorough assessment of trustworthiness in GPT
-                            models.</p>
-                        <p>This research endeavor is designed to help researchers and practitioners better understand the capabilities,
-                            limitations, and potential risks involved in deploying these state-of-the-art Large
-                            Language Models (LLMs).</p>
-                        <p>
-                            This project is organized around the following eight primary perspectives of trustworthiness,
-                            including:
-                        </p>
-                        <ul>
-                            <li>Toxicity</li>
-                            <li>Stereotype and bias</li>
-                            <li>Adversarial robustness</li>
-                            <li>Out-of-Distribution Robustness</li>
-                            <li>Privacy</li>
-                            <li>Robustness to Adversarial Demonstrations</li>
-                            <li>Machine Ethics</li>
-                            <li>Fairness</li>
-                        </ul>
+<!--    <div class="container">-->
+<!--        <div class="row">-->
+<!--            <div class="col-md-12">-->
+<!--                <div class="infoCard">-->
+<!--                    <div class="infoBody">-->
+<!--                        <div class="infoHeadline"><h1>What is DecodingTrust?</h1></div>-->
+<!--                        <p><span>DecodingTrust</span> aims at providing a thorough assessment of trustworthiness in GPT-->
+<!--                            models.</p>-->
+<!--                        <p>This research endeavor is designed to help researchers and practitioners better understand the capabilities,-->
+<!--                            limitations, and potential risks involved in deploying these state-of-the-art Large-->
+<!--                            Language Models (LLMs).</p>-->
+<!--                        <p>-->
+<!--                            This project is organized around the following eight primary perspectives of trustworthiness,-->
+<!--                            including:-->
+<!--                        </p>-->
+<!--                        <ul>-->
+<!--                            <li>Toxicity</li>-->
+<!--                            <li>Stereotype and bias</li>-->
+<!--                            <li>Adversarial robustness</li>-->
+<!--                            <li>Out-of-Distribution Robustness</li>-->
+<!--                            <li>Privacy</li>-->
+<!--                            <li>Robustness to Adversarial Demonstrations</li>-->
+<!--                            <li>Machine Ethics</li>-->
+<!--                            <li>Fairness</li>-->
+<!--                        </ul>-->
 
-<!--                        <br><img style="width: 5%;" src="crown.png" alt="Our paper received the Outstanding Paper Award at NeurIPS'23."><b><em> Our paper received the Outstanding Paper Award at NeurIPS'23. </em></b>-->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="infoCard">
-                    <div class="infoBody">
-                        <div class="infoHeadline"><h2>Trustworthiness Perspectives</h2></div>
-                        <p>⚠️ WARNING: our data contains model outputs that may be considered offensive.</p>
-                        <br/>
-                        <p>DecodingTrust aims to provide a comprehensive trustworthiness evaluation on the recent large
-                            language model GPT-4, in comparison to GPT-3.5, from different perspectives, including
-                            toxicity, stereotype bias, adversarial robustness, out-of-distribution robustness,
-                            robustness on adversarial demonstrations, privacy, machine ethics, and fairness under
-                            different settings.
-                        </p>
-                        <br/>
-                        <img style="width: 100%;" src="overview.png"
-                             alt="Examples of unreliable responses of GPT-4 from different trustworthiness perspectives. GPT-4 can generate undesirable or unreliable content given benign system prompts.">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<!--&lt;!&ndash;                        <br><img style="width: 5%;" src="crown.png" alt="Our paper received the Outstanding Paper Award at NeurIPS'23."><b><em> Our paper received the Outstanding Paper Award at NeurIPS'23. </em></b>&ndash;&gt;-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="container">-->
+<!--        <div class="row">-->
+<!--            <div class="col-md-12">-->
+<!--                <div class="infoCard">-->
+<!--                    <div class="infoBody">-->
+<!--                        <div class="infoHeadline"><h2>Trustworthiness Perspectives</h2></div>-->
+<!--                        <p>⚠️ WARNING: our data contains model outputs that may be considered offensive.</p>-->
+<!--                        <br/>-->
+<!--                        <p>DecodingTrust aims to provide a comprehensive trustworthiness evaluation on the recent large-->
+<!--                            language model GPT-4, in comparison to GPT-3.5, from different perspectives, including-->
+<!--                            toxicity, stereotype bias, adversarial robustness, out-of-distribution robustness,-->
+<!--                            robustness on adversarial demonstrations, privacy, machine ethics, and fairness under-->
+<!--                            different settings.-->
+<!--                        </p>-->
+<!--                        <br/>-->
+<!--                        <img style="width: 100%;" src="overview.png"-->
+<!--                             alt="Examples of unreliable responses of GPT-4 from different trustworthiness perspectives. GPT-4 can generate undesirable or unreliable content given benign system prompts.">-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="infoCard">
-                    <div class="infoBody">
-                        <div class="infoHeadline"><h2>Getting Started</h2></div>
-                        <p>We have built a few resources to help you get started with the dataset.</p>
-                        <p> Explore our dataset (distributed under the <a
-                                href="http://creativecommons.org/licenses/by-sa/4.0/legalcode">CC BY-SA 4.0</a>
-                            license):
-                            <br>
-                        <ul class="list-unstyled">
-                            <li><a class="btn actionBtn inverseBtn" href="https://github.com/AI-secure/DecodingTrust">dataset</a>
-                            </li>
-                        </ul>
-                        </p><p>To evaluate your models, we have also made available the evaluation script for different
-                        facets of trustworthiness.
-                        To replicate our evaluation, go the corresponding subdirectories for detailed evaluation scripts.
-                        <ul class="list-unstyled">
-                            <li><a class="btn actionBtn inverseBtn"
-                                   href="https://github.com/AI-secure/DecodingTrust/tree/main/src/dt/perspectives/toxicity">Toxicity
-                            </a></li>
-                            <li><a class="btn actionBtn inverseBtn"
-                                   href="https://github.com/AI-secure/DecodingTrust/tree/main/src/dt/perspectives/stereotype">Stereotype
-                            </a></li>
-                            <li><a class="btn actionBtn inverseBtn"
-                                   href="https://github.com/AI-secure/DecodingTrust/tree/main/src/dt/perspectives/advglue">Adversarial
-                                Robustness
-                            </a></li>
-                            <li><a class="btn actionBtn inverseBtn"
-                                   href="https://github.com/AI-secure/DecodingTrust/tree/main/src/dt/perspectives/ood">Out-of-distribution
-                                Robustness
-                            </a></li>
-                            <li><a class="btn actionBtn inverseBtn"
-                                   href="https://github.com/AI-secure/DecodingTrust/tree/main/src/dt/perspectives/adv_demonstration">Robustness
-                                against Adversarial Demonstrations
-                            </a></li>
-                            <li><a class="btn actionBtn inverseBtn"
-                                   href="https://github.com/AI-secure/DecodingTrust/tree/main/src/dt/perspectives/privacy">Privacy
-                            </a></li>
-                            <li><a class="btn actionBtn inverseBtn"
-                                   href="https://github.com/AI-secure/DecodingTrust/tree/main/src/dt/perspectives/machine_ethics">Machine Ethics
-                            </a></li>
-                            <li><a class="btn actionBtn inverseBtn"
-                                   href="https://github.com/AI-secure/DecodingTrust/tree/main/src/dt/perspectives/fairness">Fairness
-                            </a></li>
-                        </ul>
-                        </p><p>While our evaluation mainly focuses on GPT-3.5 and GPT-4,
-                        once you have a built a model that works to your expectations, you can also submit
-                        the mode generations and their corresponding scores via submitting pull requests in GitHub.
-                        Because DecodingTrust is an ongoing effort, we expect the dataset to evolve.</p>
-                        <div class="infoHeadline"><h2>Have Questions?</h2></div>
-                        <p> Ask us questions at <a href="mailto:boxinw2@illinois.edu">boxinw2@illinois.edu</a>.</p>
+<!--    <div class="container">-->
+<!--        <div class="row">-->
+<!--            <div class="col-md-12">-->
+<!--                <div class="infoCard">-->
+<!--                    <div class="infoBody">-->
+<!--                        <div class="infoHeadline"><h2>Getting Started</h2></div>-->
+<!--                        <p>We have built a few resources to help you get started with the dataset.</p>-->
+<!--                        <p> Explore our dataset (distributed under the <a-->
+<!--                                href="http://creativecommons.org/licenses/by-sa/4.0/legalcode">CC BY-SA 4.0</a>-->
+<!--                            license):-->
+<!--                            <br>-->
+<!--                        <ul class="list-unstyled">-->
+<!--                            <li><a class="btn actionBtn inverseBtn" href="https://github.com/AI-secure/DecodingTrust">dataset</a>-->
+<!--                            </li>-->
+<!--                        </ul>-->
+<!--                        </p><p>To evaluate your models, we have also made available the evaluation script for different-->
+<!--                        facets of trustworthiness.-->
+<!--                        To replicate our evaluation, go the corresponding subdirectories for detailed evaluation scripts.-->
+<!--                        <ul class="list-unstyled">-->
+<!--                            <li><a class="btn actionBtn inverseBtn"-->
+<!--                                   href="https://github.com/AI-secure/DecodingTrust/tree/main/src/dt/perspectives/toxicity">Toxicity-->
+<!--                            </a></li>-->
+<!--                            <li><a class="btn actionBtn inverseBtn"-->
+<!--                                   href="https://github.com/AI-secure/DecodingTrust/tree/main/src/dt/perspectives/stereotype">Stereotype-->
+<!--                            </a></li>-->
+<!--                            <li><a class="btn actionBtn inverseBtn"-->
+<!--                                   href="https://github.com/AI-secure/DecodingTrust/tree/main/src/dt/perspectives/advglue">Adversarial-->
+<!--                                Robustness-->
+<!--                            </a></li>-->
+<!--                            <li><a class="btn actionBtn inverseBtn"-->
+<!--                                   href="https://github.com/AI-secure/DecodingTrust/tree/main/src/dt/perspectives/ood">Out-of-distribution-->
+<!--                                Robustness-->
+<!--                            </a></li>-->
+<!--                            <li><a class="btn actionBtn inverseBtn"-->
+<!--                                   href="https://github.com/AI-secure/DecodingTrust/tree/main/src/dt/perspectives/adv_demonstration">Robustness-->
+<!--                                against Adversarial Demonstrations-->
+<!--                            </a></li>-->
+<!--                            <li><a class="btn actionBtn inverseBtn"-->
+<!--                                   href="https://github.com/AI-secure/DecodingTrust/tree/main/src/dt/perspectives/privacy">Privacy-->
+<!--                            </a></li>-->
+<!--                            <li><a class="btn actionBtn inverseBtn"-->
+<!--                                   href="https://github.com/AI-secure/DecodingTrust/tree/main/src/dt/perspectives/machine_ethics">Machine Ethics-->
+<!--                            </a></li>-->
+<!--                            <li><a class="btn actionBtn inverseBtn"-->
+<!--                                   href="https://github.com/AI-secure/DecodingTrust/tree/main/src/dt/perspectives/fairness">Fairness-->
+<!--                            </a></li>-->
+<!--                        </ul>-->
+<!--                        </p><p>While our evaluation mainly focuses on GPT-3.5 and GPT-4,-->
+<!--                        once you have a built a model that works to your expectations, you can also submit-->
+<!--                        the mode generations and their corresponding scores via submitting pull requests in GitHub.-->
+<!--                        Because DecodingTrust is an ongoing effort, we expect the dataset to evolve.</p>-->
+<!--                        <div class="infoHeadline"><h2>Have Questions?</h2></div>-->
+<!--                        <p> Ask us questions at <a href="mailto:boxinw2@illinois.edu">boxinw2@illinois.edu</a>.</p>-->
 
-                        <div class="infoHeadline"><h2>Acknowledgements</h2></div>
-                        <p> We thank the <a href="https://rajpurkar.github.io/SQuAD-explorer/">SQuAD team</a> for
-                            allowing us to use their website template and submission tutorials. </p></div>
-                    <div class="infoSubheadline">
-                        <!--                        <a class="github-button" href="https://github.com/adversarialglue" data-icon="octicon-star"-->
-                        <!--                           data-style="mega" data-count-href="/rajpurkar/stargazers"-->
-                        <!--                           data-count-api="/repos/rajpurkar#stargazers_count"-->
-                        <!--                           data-count-aria-label="# stargazers on GitHub"-->
-                        <!--                           aria-label="Star rajpurkar on GitHub">Star</a>-->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<!--                        <div class="infoHeadline"><h2>Acknowledgements</h2></div>-->
+<!--                        <p> We thank the <a href="https://rajpurkar.github.io/SQuAD-explorer/">SQuAD team</a> for-->
+<!--                            allowing us to use their website template and submission tutorials. </p></div>-->
+<!--                    <div class="infoSubheadline">-->
+<!--                        &lt;!&ndash;                        <a class="github-button" href="https://github.com/adversarialglue" data-icon="octicon-star"&ndash;&gt;-->
+<!--                        &lt;!&ndash;                           data-style="mega" data-count-href="/rajpurkar/stargazers"&ndash;&gt;-->
+<!--                        &lt;!&ndash;                           data-count-api="/repos/rajpurkar#stargazers_count"&ndash;&gt;-->
+<!--                        &lt;!&ndash;                           data-count-aria-label="# stargazers on GitHub"&ndash;&gt;-->
+<!--                        &lt;!&ndash;                           aria-label="Star rajpurkar on GitHub">Star</a>&ndash;&gt;-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
 </div>
 <nav class="navbar navbar-default navbar-static-bottom footer">
     <div class="container clearfix">
