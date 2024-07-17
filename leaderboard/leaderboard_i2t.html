@@ -66,22 +66,53 @@
 <div class="columns is-centered m-6">
   <div class="column is-full has-text-centered content">
     <h2 class="title is-3" id="leaderboard">Leaderboard</h2>
-    <button id="toggleButton">Switch to Image-to-Text Leaderboard</button>
-    <div class="spacer"></div>
-    <table id="table1"></table>
-    <table id="table2" class="hidden"></table>
+
+    <table id="table1">
+
+    </table>
   </div>
+</div>
+</div>
+
+<!-------------------------------------------------------------------- RESULTS SECTION -------------------------------------------------------------------->
+
+
 </div>
 </section>
 
 <script>
-  function loadTable(csvFile, tableId, enableFeatures) {
-    Papa.parse(csvFile, {
+
+  function sortTable(table, column, type, asc) {
+    var tbody = table.tBodies[0];
+    var rows = Array.from(tbody.rows);
+
+    rows.sort(function(a, b) {
+      var valA = a.cells[column].textContent;
+      var valB = b.cells[column].textContent;
+
+      if (type === 'number') {
+        valA = parseFloat(valA);
+        valB = parseFloat(valB);
+      }
+
+      if (asc) {
+        return valA > valB ? 1 : -1;
+      } else {
+        return valA < valB ? 1 : -1;
+      }
+    });
+
+    rows.forEach(row => tbody.appendChild(row));
+  }
+
+
+  document.addEventListener('DOMContentLoaded', function() {
+    Papa.parse('./static/csv/leaderboard_i2t.csv', {
       download: true,
       header: true,
       complete: function(results) {
         let data = results.data;
-        $(`#${tableId}`).DataTable({
+        let table = $('#table1').DataTable({
           data: data,
           columns: [
             { data: 'Model', title: 'Model' },
@@ -93,43 +124,15 @@
             { data: 'OOD', title: 'Out-of-Distribution Robustness' },
             { data: 'Average', title: 'Overall' }
           ],
+          header: true,
           stripeClasses: ['odd-row', 'even-row'],
-          order: [[7, 'desc']],
-          searching: enableFeatures,
-          lengthChange: enableFeatures,
-          paging: enableFeatures,
-          info: enableFeatures,
-          destroy: true,
+          order: [[7, 'desc']]
         });
       }
     });
-  }
-
-  document.addEventListener('DOMContentLoaded', function() {
-    loadTable('./static/csv/leaderboard_t2i.csv', 'table1', true);
-
-    document.getElementById('toggleButton').addEventListener('click', function() {
-      let table1 = document.getElementById('table1');
-      let table2 = document.getElementById('table2');
-      let toggleButton = document.getElementById('toggleButton');
-
-      if (table1.classList.contains('hidden')) {
-        $('#table2').DataTable().destroy();
-        table1.classList.remove('hidden');
-        table2.classList.add('hidden');
-        loadTable('./static/csv/leaderboard_t2i.csv', 'table1', true);
-        toggleButton.textContent = 'Switch to Image-to-Text Leaderboard';
-      } else {
-        $('#table1').DataTable().destroy();
-        if (!$.fn.DataTable.isDataTable('#table2')) {
-          loadTable('./static/csv/leaderboard_i2t.csv', 'table2', true);
-        }
-        table1.classList.add('hidden');
-        table2.classList.remove('hidden');
-        toggleButton.textContent = 'Switch to Text-to-Image Leaderboard';
-      }
-    });
   });
+
+
 </script>
 
 <style>
@@ -162,11 +165,7 @@
   }
 
   #toggleButton:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-  }
-
-  .spacer {
-    margin-top: 20px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); /* 鼠标悬停时的阴影效果 */
   }
 
   table {
@@ -195,9 +194,7 @@
     border-bottom: 2px solid #ddd;
   }
 
-  td:hover {
-    background-color: #ffffff;
-  }
+  td:hover {background-color: #ffffff;}
 </style>
 
 </body>

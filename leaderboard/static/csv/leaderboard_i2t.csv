@@ -1,0 +1,4 @@
+Model,Safety,Hallucination,Fairness,Privacy,Adv,OOD,Average
+gpt-4-vision-preview,99.5,43.8,14.0,58.94,85.27,36.85,56.39
+gpt-4o-2024-05-13,92.5,46.1,36.3,40.51,90.04,51.68,59.52
+llava-v1.6-vicuna-7b-hf,46.2,33.1,61.6,78.39,70.02,40.32,54.94
